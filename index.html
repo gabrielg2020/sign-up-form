@@ -3,9 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
-    
+    <div class="banner">
+        <div class="logo-header-container">
+            <img src="/assets/odin-lined.png" alt="The Odin Project Logo" class="logo">
+            <h1 class="header">ODIN</h1>
+        </div>
+        <div class="banner-footer"></div>
+    </div>
+
+    <div class="content-containter">
+        <p>This is not a real  online service! You know you need something like this in your life to help you realise your dreams.</p>
+        <p>Sign up <em>now</em> to get started.</p>
+        <p>You <em>know</em> you want to.</p>
+        <form action="" class="signup-form">
+            <div class="input-container">
+                <fieldset>
+                    <label for="first-name">First Name</label>
+                    <input type="text" name="first-name" id="first-name">
+
+                    <label for="last-name">Last Name</label>
+                    <input type="text" name="last-name" id="last-name">
+
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" name="phone-number" id="phone-number">
+
+                    <label for="password">Password</label>
+                    <input type="password" name="password" id="password">
+
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" name="confirm-password" id="confirm-password">
+                </fieldset>
+            </div>
+            <button type="submit"> Create Account</button>
+        </form>
+        <p class="small-text">Already have an account? <a href="#">Log in</a></p>
+    </div>
 </body>
 </html>
