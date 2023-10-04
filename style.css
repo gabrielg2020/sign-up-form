@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400;500;600;700;800;900&display=swap');
 
 @font-face {
     font-family: Norse;
@@ -45,23 +45,95 @@ body{
 .content-container {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     gap: 4rem;
+    height: 100%;
 }
 
 .text-container {
     font-size: 1.5rem;
-    margin: 5rem 2.5rem 0 2.5rem;
+    margin: 5rem 30rem 0 2.5rem;
+    min-width: 258px;
+}
+
+.text-container p:last-child {
+    margin-top: 1.2rem;
 }
 
 .input-container {
-    
-
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem 2.5rem;
 }
 
-a, a:visited {
+.form-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-right: 25%;
+}
+
+.small-text {
+    position: relative;
+    bottom: 5%;
+    left: 2.5rem;
+    font-size: 0.9rem;
+}
+
+.small-text a {
+    color: black;
+    font-size: 1rem;
+}
+
+button {
+    margin: 2rem 0rem 0rem 2.5rem;
+    padding: 1rem 3rem;
+    background-color: #596D48;
+    font-size: 1.2rem;
+    border: 0px transparent;
+    border-radius: 0.5rem;
+    color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 0.2rem;
+}
+
+
+input:focus {
+    outline: 2px solid rgb(0, 116, 224);
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.input-error {
+    outline: 2px solid rgb(224, 0, 0);
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+input {
+    font-size: 1.2rem;
+    border: 1px solid #E5E7EB;
+    height: 1.6rem;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.5rem;
+}
+
+.form-group{
+    display: flex;
+    flex-direction: column;
+    margin-right: 20%;
+}
+
+legend {
+    font-size: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.banner-footer a,.banner-footer a:visited {
     color: white;
     text-decoration: underline;
-
 }
 
 h1 {
